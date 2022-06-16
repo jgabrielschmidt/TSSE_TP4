@@ -1,4 +1,18 @@
 #include <stdint.h>
+/******************************************************************************
+ * TP4 - CESE 16Co - Testing de Software en Sistemas Embebidos.
+ * Autor: Jorge Gabriel Schmidt.
+ * 
+ * El modulo TP4.c - TP4.h contine funciones que son utilizadas en el desarrollo
+ * del trabajo final de la especializacion de sistemas embebidos. Las mismas se 
+ * utilizan para determinar el nivel de ruido presente en el canal acustico por 
+ * el cual se recibira una señal. Tambien contiene funciones que son utilizadas
+ * para controlar la ganancia del canal acustico.
+ *****************************************************************************/
+ 
+/******************************************************************************
+ * Includes
+ *****************************************************************************/
 #include "TP4.h"
 #include "math.h"
 #include "errores.h"
@@ -158,56 +172,12 @@ void canal_acustico_libre_desvio_calcular( uint16_t *mediciones ){
 }
 
 /**
- * @brief Funcion que inicializa el ADC. Es una funcion de ayuda para el test.
- * 
- */
-void comenzar_ADC1(void){
-
-}
-
-/**
- * @brief Funcion que finaliza el ADC. Es una funcion de ayuda para el test.
- * 
- */
-void finalizar_ADC1(void){
-
-}
-
-/**
- * @brief Funcion que lee un valor del ADC. Es una funcion de ayuda para el test.
- * 
- * @return uint16_t 
- */
-uint16_t valor_ADC(void){
-	volatile variable_de_prueba;
-    return 1;
-}
-
-/**
- * @brief Funcion que retrasa en una unidad temporal la lectura del ADC. Es una 
- * 		  funcion de ayuda para el test.
- * 
- * @param tiempo : Valor de retraso entre lecturas del ADC.
- */
-void delay_bloqueante_us(uint8_t tiempo){
-
-}
-
-/**
  * @brief 
  * 
  * @return uint8_t 
  */
 uint8_t canal_acustico_libre_medir( uint16_t * mediciones ){
 
-/* 	comenzar_ADC1();
-	for(int i = 0; i < canal.cantidad_muestras_ruido; i++){
-		// Esto me fija una tasa de muestreo
-		delay_bloqueante_us( canal.tiempo_entre_muestras_ruido ); 
-		mediciones[i] = valor_ADC();
-	}
-	finalizar_ADC1(); */
-	
     // Calculo la media y el desvio del canal
 	canal_acustico_libre_media_calcular( mediciones );
 	canal_acustico_libre_desvio_calcular( mediciones );

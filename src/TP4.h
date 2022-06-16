@@ -7,10 +7,14 @@
  * Tipos enumerativos
  *****************************************************************************/
 
+// Tipo enumerativo que declara los valores de ganancia en el canal
 typedef enum {GMIN, G1, G2, G3, G4, G5, G6, GMAX}tipo_valores_ganancia;
 
+// Tipo enumerativo que maneja las acciones a tomar sobre la ganancia en el
+// canal de recepcion.
 typedef enum {GSUBIR, GBAJAR, GMANTENER}tipo_accion_ganancia;
 
+// Estructura que contiene distintas caracteristicas del canal acustico
 typedef struct
 {
 	tipo_valores_ganancia ganancia;
