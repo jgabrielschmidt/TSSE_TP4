@@ -1,0 +1,50 @@
+---
+:source:
+  :path: test
+  :file: test_TP2.c
+:successes:
+- :test: test_inicializar_variables_canal_acustico
+  :line: 26
+  :message: ''
+  :unity_test_time: 0
+- :test: test_subir_modificar_ganancia
+  :line: 37
+  :message: ''
+  :unity_test_time: 0
+- :test: test_bajar_modificar_ganancia
+  :line: 48
+  :message: ''
+  :unity_test_time: 0
+- :test: test_establecer_ganancia
+  :line: 61
+  :message: ''
+  :unity_test_time: 0
+- :test: test_ganancia_invalida_establecer_ganancia
+  :line: 73
+  :message: ''
+  :unity_test_time: 0
+- :test: test_seleccionar_canal_demux
+  :line: 84
+  :message: ''
+  :unity_test_time: 0
+- :test: test_canal_acustico_libre_media_calcular
+  :line: 98
+  :message: ''
+  :unity_test_time: 0
+- :test: test_canal_acustico_libre_desvio_calcular
+  :line: 109
+  :message: ''
+  :unity_test_time: 0
+- :test: test_canal_acustico_libre_medir
+  :line: 125
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0006330349997369922
